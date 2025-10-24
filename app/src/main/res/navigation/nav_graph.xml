@@ -22,4 +22,25 @@
         android:name="com.example.formandlistapp.DatosFragment"
         android:label="Ver Registros"
         tools:layout="@layout/fragment_datos" />
+
+    <fragment
+        android:id="@+id/nav_producto"
+        android:name="com.example.formandlistapp.ProductoFragment"
+        android:label="Productos"
+        tools:layout="@layout/fragment_producto">
+        <action
+            android:id="@+id/action_productoFragment_to_detalleProductoFragment"
+            app:destination="@id/nav_detalle_producto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detalle_producto"
+        android:name="com.example.formandlistapp.DetalleProductoFragment"
+        android:label="Detalle Producto"
+        tools:layout="@layout/fragment_detalle_producto">
+        <argument
+            android:name="product"
+            app:argType="com.example.formandlistapp.Product" />
+    </fragment>
+
 </navigation>

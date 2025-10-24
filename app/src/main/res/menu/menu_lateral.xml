@@ -2,8 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_formulario"
-        android:title="Registrar" />
+        android:title="@string/registrar" />
     <item
         android:id="@+id/nav_lista"
-        android:title="Ver registros" />
+        android:title="@string/ver_registros" />
+    <item
+        android:id="@+id/nav_producto"
+        android:title="@string/producto" />
 </menu>

@@ -29,7 +29,8 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
 
         appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.nav_formulario, R.id.nav_lista), drawerLayout)
+            R.id.nav_formulario, R.id.nav_lista, R.id.nav_producto, R.id.nav_detalle_producto
+        ), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
